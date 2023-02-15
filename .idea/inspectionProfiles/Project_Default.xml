@@ -5,8 +5,10 @@
       <option name="customHeaders">
         <set>
           <option value="X-server-pot" />
+          <option value="X-count" />
         </set>
       </option>
     </inspection_tool>
+    <inspection_tool class="SpringBootApplicationProperties" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>
