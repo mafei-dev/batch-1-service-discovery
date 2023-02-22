@@ -6,6 +6,8 @@
         <set>
           <option value="X-server-pot" />
           <option value="X-count" />
+          <option value="X-Gateway-out" />
+          <option value="X-Gateway-message" />
         </set>
       </option>
     </inspection_tool>
