@@ -1,0 +1,7 @@
+AppGlobalFilter.customGlobalFilter1:PRE
+AppGlobalFilter.customGlobalFilter2:PRE
+AppGlobalFilter.customGlobalFilter3:PRE
+
+AppGlobalFilter.customGlobalFilter3:POST
+AppGlobalFilter.customGlobalFilter2:POST
+AppGlobalFilter.customGlobalFilter1:POST
