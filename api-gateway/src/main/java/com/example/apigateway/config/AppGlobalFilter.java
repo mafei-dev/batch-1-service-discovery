@@ -3,12 +3,14 @@ package com.example.apigateway.config;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import reactor.core.publisher.Mono;
 
 @Configuration
 public class AppGlobalFilter {
 
     @Bean
+    @Order(1)
     public GlobalFilter customGlobalFilter1() {
         System.out.println("AppGlobalFilter.customGlobalFilter1:0");
         return (exchange, chain) -> {
@@ -24,9 +26,8 @@ public class AppGlobalFilter {
     }
 
 
-
-
     @Bean
+    @Order(3)
     public GlobalFilter customGlobalFilter2() {
         System.out.println("AppGlobalFilter.customGlobalFilter2:0");
         return (exchange, chain) -> {
@@ -40,6 +41,7 @@ public class AppGlobalFilter {
     }
 
     @Bean
+    @Order(2)
     public GlobalFilter customGlobalFilter3() {
         System.out.println("AppGlobalFilter.customGlobalFilter3:0");
         return (exchange, chain) -> {
